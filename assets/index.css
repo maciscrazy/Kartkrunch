@@ -626,6 +626,120 @@ a {
 }
 
 
+.cart{
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    background-color: #000;
+    padding: 7px 20px 5px 20px;
+    border-radius: 10px;
+}
+
+
+/* Cart Styling Starts Here */
+.cart-heading {
+    margin-top: 10px;
+    color: #FF7A00;
+    font-size: 22px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.cart-container {
+    margin-top: 60px;
+    border-radius: 10px;
+    height: 40vh;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    padding: 12px;
+    overflow-y: scroll;
+
+}
+
+.cart-container::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+
+.food-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+
+
+.item-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bolder;
+    padding: 10px;
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+
+
+.total-price-container {
+    margin-top: 40px;
+    height: 10vh;
+    /* color: #FF7A00; */
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.payment-info {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: #FF7A00 1px solid;
+    align-items: center;
+}
+
+.payment-cost {
+    display: flex;
+    margin-top: 5px;
+    color: #FF7A00;
+    justify-content: center;
+}
+
+.enter-address {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 9px;
+    border-radius: 10px;
+    background-color: #FF7A00; 
+}
+
+.enter-address a {
+    color: white;
+    font-size: 12px;
+}
+
+
+.continue-ordering {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 9px;
+    border-radius: 10px;
+    border: #FF7A00 1px solid;
+}
+
+.continue-ordering a {
+    color: black;
+    font-size: 12px;
+}
+
+/* .item-price {
+    margin-left: 10px;
+} */
+/* Cart Styling Ends Here */
+
+
 @media only screen and (min-width: 3000px) {
 
     .mobile-layout {
