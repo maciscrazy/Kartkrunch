@@ -263,9 +263,11 @@ a {
     height: 50px;
 }
 
-.brand-name {
-    font-weight: 500;
+.eat-now-brand-name {
+    font-weight: 700;
+    font-size: 14px;
     color: rgb(46, 46, 46);
+    margin-left: -55px;
 }
 
 .eat-now{ 
@@ -321,9 +323,6 @@ a {
 
 }
 
-.brand-name {
-    margin-left: 5px;
-}
 .food-brand-image {
     width: 30px;
     height:30px;
@@ -366,6 +365,7 @@ a {
 
 .restaurant-image {
     border-radius: 10px;
+    height: 22vh;
 }
 
 
@@ -513,7 +513,7 @@ a {
     height: 50px;
 }
 
-.brand-name {
+.product-detail-brand-name {
     margin-top: -.1px;
     font-size: 17px;
     margin-left: 5px;
@@ -729,15 +729,102 @@ a {
     border: #FF7A00 1px solid;
 }
 
+:hover .continue-ordering {
+    background-color: #FF7A00;
+    color: white;
+}
+
 .continue-ordering a {
     color: black;
     font-size: 12px;
 }
 
-/* .item-price {
-    margin-left: 10px;
-} */
+.restaurant-cart {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    margin-bottom: -50px;
+    justify-content: center;
+    color: #474747;
+    font-weight: bold;
+}
+
+.restaurant-cart-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.restaurant-cart-name {
+    margin-left: 5px;
+}
 /* Cart Styling Ends Here */
+
+
+/* Payment Styling Starts Here */
+
+.payment-random-info {
+    font-size: 20px;
+    margin-left: 14px;
+    color: #474747;
+}
+
+
+.payment-box {
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    padding: 30px;
+    margin-top: 40%;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+
+.payment-box input {
+    width: 95%;
+    padding: 10px;
+    border: 0 #474747 solid;
+    border-radius: 3px;
+}
+
+.pay-button {
+    margin-top: 30px;
+    width: 50%;
+    margin-left: 75px;
+    border: none;
+    padding: 10px;
+    background-color: #FF7A00;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+
+.payment-footer {
+    margin-top: 110px;
+}
+/* Payment Styling Ends Here */
+
+
+/* Thanks Styling Starts Here */
+
+.thanks-info {
+    padding: 20px;
+    margin-right: 10px;
+    margin-left: 5px;
+    border-radius: 10px;
+    margin-top: 50%;
+    margin-bottom: 30px;
+    flex: 1;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.thanks-footer {
+    margin-top: 150px;
+}
+
+/* Thanks Styling Ends Here */
 
 
 @media only screen and (min-width: 3000px) {
