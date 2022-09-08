@@ -127,6 +127,10 @@ a {
     scroll-behavior: smooth;
 }
 
+.scrollbox-div-with-shadow a {
+    color: black;
+}
+
 .scrollbox-div::-webkit-scrollbar {
     display: none;
   }
@@ -245,6 +249,7 @@ a {
 
 .time p {
     font-weight: bold;
+    color: black;
 }
 
 
@@ -257,6 +262,8 @@ a {
     align-items: center;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+
+
 
 .brand img {
     width: 50px;
@@ -477,7 +484,7 @@ a {
 }
 
 
-/*  Product Detail Styling Starts Here */
+/*  Restaurant Styling Starts Here */
 
 .brand-banner {
     width: 100%;
@@ -536,10 +543,14 @@ a {
     justify-content: center;
     align-items: center;
     font-size: 13px;
+    color: black;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 
 }
+
+
+
 
 .product-detail-restaurant-info {
     display: flex;
@@ -562,9 +573,7 @@ a {
 
 .active {
     background-color: #FF7A00;
-    color: white;
     font-weight: 600;
-
 }
 
 
@@ -574,6 +583,10 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.food-list-box a {
+    color: black;
 }
 
 .food-box {
@@ -595,6 +608,10 @@ a {
 
 .food-name-container {
     margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
 
 .food-box-name {
@@ -634,6 +651,8 @@ a {
     padding: 7px 20px 5px 20px;
     border-radius: 10px;
 }
+
+/* Restaurant Ends Here */
 
 
 /* Cart Styling Starts Here */
@@ -709,15 +728,11 @@ a {
     align-items: center;
     justify-content: center;
     padding: 9px;
+    color: white;
+    font-size: 12px;
     border-radius: 10px;
     background-color: #FF7A00; 
 }
-
-.enter-address a {
-    color: white;
-    font-size: 12px;
-}
-
 
 .continue-ordering {
     display: flex;
@@ -725,19 +740,12 @@ a {
     align-items: center;
     justify-content: center;
     padding: 9px;
+    color: black;
+    font-size: 12px;
     border-radius: 10px;
     border: #FF7A00 1px solid;
 }
 
-:hover .continue-ordering {
-    background-color: #FF7A00;
-    color: white;
-}
-
-.continue-ordering a {
-    color: black;
-    font-size: 12px;
-}
 
 .restaurant-cart {
     height: 5vh;
@@ -769,7 +777,7 @@ a {
 }
 
 
-.payment-box {
+.form-box {
     box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
     padding: 30px;
     margin-top: 40%;
@@ -778,12 +786,15 @@ a {
     border-radius: 10px;
 }
 
-
-.payment-box input {
+.form-box input {
     width: 95%;
     padding: 10px;
     border: 0 #474747 solid;
     border-radius: 3px;
+}
+
+.form-box .input-field {
+    padding-bottom: 15px;
 }
 
 .pay-button {
@@ -827,46 +838,96 @@ a {
 /* Thanks Styling Ends Here */
 
 
-@media only screen and (min-width: 3000px) {
+/* Filter Styling Starts Here */
+
+.filter-header {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+.filter-header h3{
+    color: #474747;
+}
+
+.filter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-restaurant {
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.filter-restaurant div {
+    color: black;
+}
+
+.filter-food-brand-details {
+    margin-top: 15px;
+}
+
+.filter-eat-now {
+    margin-top: 15px;
+}
+/* Filter Styling Ends Here */
+
+
+/* Authentication Styling Starts Here */
+
+.body-login {
+    padding: 0;
+    margin: 0;
+}
+
+.big-container {
+    background-color: #FF7A00;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.title {
+    font-weight: 700;
+    color: white;
+    font-size: 20px;
+}
+
+.authentication-form-box {
+    margin-top: 50px;
+}
+
+.desktop-layout {
+    display: none;
+}
+
+
+/* Authentication Styling Ends Here */
+
+
+@media only screen and (min-width: 768px) {
 
     .mobile-layout {
         display: none;
     }
 
-    /* .main-header {
+    .desktop-layout {
+        padding: none;
         display: flex;
+        background-color: #FF7A00;
+        width: 100%;
+        height: 99vh;
+        justify-content: center;
         align-items: center;
-        justify-content: space-evenly;
-    } */
-
-    .small-logo {
-        display: none;
+        color: white;
+        font-weight: 700;
+        font-size: 20px;
     }
-    .large-logo {
-        display: inline-flex;
-
-        color: #FF7A00;
-    }
-
-    .small-location-address {
-        display: none;
-    }
-
-    .large-location-address {
-        font-size: 12px;
-        color: #000;
-
-        font-weight: bolder;
-        margin-left: 4px;
-        display: inline-flex;
-        color: #FF7A00
-
-    }
-
-    .tray span {
-        display: inline-block;
-    }
-
-
 
 }
